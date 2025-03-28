@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>f_shear_profe</class>
+ <widget class="QFrame" name="f_shear_profe">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>534</width>
+    <height>164</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Frame</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QWidget" name="w_shear_profe" native="true">
+     <property name="sizePolicy">
+      <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
+       <horstretch>0</horstretch>
+       <verstretch>0</verstretch>
+      </sizepolicy>
+     </property>
+     <property name="minimumSize">
+      <size>
+       <width>400</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>650</width>
+       <height>100</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget{
+	/*background: qlineargradient(spread:pad, x1:0, y1:1, x2:1, y2:0,
+	stop:0 rgb(55, 55, 55),
+	stop: 0.3 rgb(105, 105, 105),
+	stop: 0.7 rgb(105, 105, 105),
+	stop:1 rgb(55, 55, 55));*/
+	
+	background: rgba(70, 70, 70, 0.4);
+	border-radius: 10px;
+	color: rgba(255, 255, 255, 1);
+}</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout">
+      <property name="leftMargin">
+       <number>10</number>
+      </property>
+      <property name="topMargin">
+       <number>10</number>
+      </property>
+      <property name="rightMargin">
+       <number>10</number>
+      </property>
+      <property name="bottomMargin">
+       <number>10</number>
+      </property>
+      <property name="spacing">
+       <number>5</number>
+      </property>
+      <item row="0" column="1">
+       <widget class="QLabel" name="s_nombre_profe">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Bahnschrift SemiLight Condensed</family>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Nombre Apellido</string>
+        </property>
+        <property name="textFormat">
+         <enum>Qt::TextFormat::AutoText</enum>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="wordWrap">
+         <bool>false</bool>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <property name="indent">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="2" rowspan="2">
+       <widget class="QPushButton" name="stats_profe">
+        <property name="minimumSize">
+         <size>
+          <width>35</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>40</width>
+          <height>80</height>
+         </size>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton{
+	color: rgb(255, 255, 255);
+	border: 0px soild;
+	border-radius: 10px;
+}
+QPushButton:hover{
+	background-color: rgba(40, 85, 165, 0.4);
+	border-radius: 10px;
+}
+QPushButton:pressed {
+    background-color: rgba(55, 55, 145, 0.7);
+}</string>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="icon">
+         <iconset>
+          <normaloff>App_Icon/page_info_40dp_FILL0_wght400_GRAD0_opsz40 (1).png</normaloff>App_Icon/page_info_40dp_FILL0_wght400_GRAD0_opsz40 (1).png</iconset>
+        </property>
+        <property name="iconSize">
+         <size>
+          <width>24</width>
+          <height>24</height>
+         </size>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="1">
+       <widget class="QLabel" name="s_escuela_profe">
+        <property name="minimumSize">
+         <size>
+          <width>200</width>
+          <height>35</height>
+         </size>
+        </property>
+        <property name="font">
+         <font>
+          <family>Tw Cen MT Condensed</family>
+          <pointsize>12</pointsize>
+          <bold>false</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Escuela: Fases</string>
+        </property>
+        <property name="margin">
+         <number>5</number>
+        </property>
+        <property name="indent">
+         <number>5</number>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" rowspan="2">
+       <widget class="QLabel" name="img_profe">
+        <property name="minimumSize">
+         <size>
+          <width>45</width>
+          <height>70</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>100</height>
+         </size>
+        </property>
+        <property name="text">
+         <string/>
+        </property>
+        <property name="pixmap">
+         <pixmap>App_Icon/account_circle_40dp_FILL0_wght400_GRAD0_opsz40 (1) 70x70.png</pixmap>
+        </property>
+        <property name="scaledContents">
+         <bool>false</bool>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignCenter</set>
+        </property>
+        <property name="margin">
+         <number>-1</number>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Orientation::Horizontal</enum>
+     </property>
+     <property name="sizeType">
+      <enum>QSizePolicy::Policy::Maximum</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>200</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
